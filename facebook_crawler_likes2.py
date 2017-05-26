@@ -15,8 +15,8 @@ def open_and_login():
     browser = Browser.Chrome(chrome_options=chrome_options)
     url = "https://zh-tw.facebook.com/login/"
     browser.get(url)
-    username ='v78203'#input('username:')
-    password ='v3034141'#input('password:')
+    username =input('username:')
+    password =input('password:')
     search_input = browser.find_element_by_xpath('//*[@id="email"]')
     search_input.send_keys(username)
     search_input = browser.find_element_by_xpath('//*[@id="pass"]')
